@@ -9,6 +9,14 @@ numbers.append(even_numbers)
 print(numbers)
 del numbers[6]
 
+# Unpacking and checking
+
+packed_numbers = [2, 3, 6, 7,]
+first_number, second_number, *rest = packed_numbers
+print(first_number, rest)
+
+print(3 in packed_numbers)
+
 # Extends adds multiple items to the end of the list
 numbers.extend(even_numbers)
 print(numbers)
@@ -40,7 +48,6 @@ print(new_sorted_numbers)
 print(numbers_to_sort)
 numbers_to_sort.sort()
 print(numbers_to_sort)
-
 
 # Index finds the index of a item
 print(numbers_to_sort.index(10))
